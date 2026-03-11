@@ -54,4 +54,36 @@ strace -p 1234
 
 ---
 
+## 6. `top` — Real-Time Process Viewer
+
+**Description:** Displays a live, dynamic view of running processes including CPU and memory usage. Refreshes every few seconds automatically.
+
+```bash
+top
+```
+
+---
+
+## 7. `htop` — Interactive Process Monitor
+
+**Description:** An enhanced, user-friendly alternative to `top` with color-coded output, mouse support, and easier process management.
+
+```bash
+htop
+```
+
+---
+
+## 8. `lsof` — List Open Files and Processes
+
+**Description:** Lists all open files and the processes using them. Useful for finding which process is using a specific port or file.
+
+```bash
+lsof -i :8080
+```
+
+---
+
 > 💡 **Tip:** `vmstat` and `pidstat` are part of the `sysstat` package. Install with `sudo apt install sysstat` if not available.
+
+> 💡 **Tip:** Use `q` to quit `top` and `htop`. Run `sudo` before commands if you need to inspect or kill processes owned by other users.
